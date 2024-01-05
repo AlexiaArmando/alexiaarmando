@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <div className="main__wrapper">
         <div className="home__background">
-            <svg width="100%" height="100%" viewBox="0 0 1920 1070" fill="#F4F0ED" xmlns="http://www.w3.org/2000/svg">
+            <svg id="main__wrapper-background" width="100%" height="100%" viewBox="0 0 1920 1070" fill="#F4F0ED" xmlns="http://www.w3.org/2000/svg">
                 <mask id="mask0_33_29" maskUnits="userSpaceOnUse" x="0" y="0" width="1920" height="1080">
                 <rect width="1920" height="1080" fill="#F4F0ED"/>
                 </mask>
@@ -53,7 +53,7 @@ const Home = () => {
                     <div className="content__about-description text--normal">
                         I am Maria Alexia Armando, a web developer specializing in both front-end and back-end web development based in the Philippines. I have extensive experience with Laravel and Vue.js.
                     </div>
-                    <div className="content__about-button"><a href={PDF} target="_blank" className="text--normal">View Résumé</a></div>
+                    <div className="content__about-button"><a href={PDF} target="_blank" rel="noreferrer nofollow" className="text--normal">View Résumé</a></div>
                 </div>
                 <div className="content__about--right">
                     <div className="contacts__item">
@@ -85,7 +85,7 @@ const Home = () => {
                             <img  src={linkedin} alt="linkedin" />
                         </div>
                         <div className="contacts__item-child text--normal">
-                            Maria Alexia Armando | LinkedIn
+                            <a href="https://www.linkedin.com/in/maria-alexia-armando-254045208/" target="_blank" rel="noreferrer nofollow" className="text--link">Maria Alexia Armando | LinkedIn</a>
                         </div>
                     </div>
                 </div>
@@ -94,8 +94,118 @@ const Home = () => {
             {/* Experience */}
             <div className="content__experience">
                 <div className="content__experience-title text--title">experience</div>
+                <div className="timeline">
+                    <div className="timeline__component--left">
+                        <a href="https://cafe24corp.com.ph/" target="_blank" rel="noreferrer nofollow" className="timeline__company-name">Cafe24 Philippines</a>
+                        <div className="timeline__company-date">Sep 2022 - 2023</div>
+                    </div>
+                    <div className="timeline__middle">
+                        <div className="timeline__point"></div>
+                    </div>
+                    <div className="timeline__component--right">
+                        <div className="timeline__title">Senior Web Developer</div>
+                        <ul className="timeline__responsibilities">
+                            <li>Revamp a high priority legacy project - &nbsp;
+                                <a href="https://experts.cafe24.com/client" target="_blank" rel="noreferrer nofollow">Cafe24 Experts</a>
+                            </li>
+                            <li>Onboard teammates to the project.</li>
+                            <li>Developed one of the main parts of the high priority project.</li>
+                            <li>Deployed the project in the production and maintain it.</li>
+                        </ul>
+                        <div className="timeline__experience">
+                            <ul className="timeline__experience-tags">
+                                <li>Laravel</li>
+                                <li>Vue.js</li>
+                                <li>Git</li>
+                                <li>Jira</li>
+                                <li>Confluence</li>
+                                <li>Figma</li>
+                                <li>Jenkins</li>
+                                <li>Docker</li>
+                                <li>Npm</li>
+                                <li>RESTful API</li>
+                                <li>TDD</li>
+                                <li>MariaDB</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="timeline__component--left">
+                        <a href="https://cafe24corp.com.ph/" target="_blank" rel="noreferrer nofollow" className="timeline__company-name">Cafe24 Philippines</a>
+                        <div className="timeline__company-date">Jul 2019 - Aug 2022</div>
+                    </div>
+                    <div className="timeline__middle">
+                        <div className="timeline__point"></div>
+                    </div>
+                    <div className="timeline__component--right">
+                        <div className="timeline__title">Junior Web Developer</div>
+                        <ul className="timeline__responsibilities">
+                            <li>Maintained internal project of the company. - Meeting Master (Company's Calendar)</li>
+                            <li>Maintained products of the company. - &nbsp;
+                                <a href="https://recipe.cafe24.com/" target="_blank" rel="noreferrer nofollow">Cafe24 Recipe Google Sheets and Google Calendar.</a> And internal applications of the company.
+                            </li>
+                            <li>Developed an internal website for the company and created a browser extension for web scraping.</li>
+                            <li>Creation of 4 WordPress themes project from scratch.</li>
+                            <li>Maintained a high priority project. - Cafe24 Experts Version 1</li>
+                            <li>Developed a project as a part of a team. - &nbsp;
+                                <a href="https://d.cafe24.com/experts?action=design_experts_list" target="_blank" rel="noreferrer nofollow">Cafe24 Design Experts</a>
+                            </li>
+                            <li>Support in migrating the website API from Apiato to Laravel Lumen.</li>
+                        </ul>
+                        <div className="timeline__experience">
+                            <ul className="timeline__experience-tags">
+                                <li>Wordpress</li>
+                                <li>Laravel</li>
+                                <li>Lumen</li>
+                                <li>Vue.js</li>
+                                <li>Git</li>
+                                <li>Jira</li>
+                                <li>Confluence</li>
+                                <li>Jenkins</li>
+                                <li>XAMP</li>
+                                <li>Npm</li>
+                                <li>RESTful API</li>
+                                <li>Unit Testing</li>
+                                <li>MariaDB</li>
+                                <li>MySQL</li>
+                                <li>Redis</li>
+                                <li>3rd-party API</li>
+                                <li>Web scraping</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="timeline__component--left">
+                        <a href="https://elosoftbiz.com/" target="_blank" rel="noreferrer nofollow" className="timeline__company-name">Elosoft Inc.</a>
+                        <div className="timeline__company-date">May - Jun 2019</div>
+                    </div>
+                    <div className="timeline__middle">
+                        <div className="timeline__point"></div>
+                        <div className="timeline__point timeline__point--bottom"></div>
+                    </div>
+                    <div className="timeline__component--right timeline__component--bottom">
+                        <div className="timeline__title">Web Developer</div>
+                        <ul className="timeline__responsibilities">
+                            <li>Engaged in a project-based system.</li>
+                            <li>Maintained the framework of the company.</li>
+                            <li>Improved over-all system.</li>
+                        </ul>
+                        <div className="timeline__experience">
+                            <ul className="timeline__experience-tags">
+                                <li>PHP</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>jQuery</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
+            
 
+            <div className="footer__info text--fade">
+                Designed in <span className="text--normal">Figma</span> and coded in <span className="text--normal">Visual Studio Code</span>. 
+                Built with <span className="text--normal">React.js</span>, deployed with <span className="text--normal">Vercel</span>.
+            </div>
 
         </div>
     </div>

@@ -1,35 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inder&display=swap');
 
+$dark-purple: #443E66;
+$purple: #7A7499;
+$light-purple: #D0C3DC;
+$off-white: #F5F5F5;
+$dark-apricot: #EBA08B;
+$light-apricot: #EBB9AA;
+$yellow: #EAB040;
+$lime: #B6C474;
+
 html, body {
     margin: 0;
     padding: 0;
-    background: #F5F5F5;
+    background: $off-white;
 }
 
-.text--normal {
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul, ol, menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.text--normal, p {
     font-family: 'Inder', sans-serif;
     font-size: 20px;
-    color: #443E66;
+    color: $dark-purple;
 }
 
 .text--title {
     font-family: 'Yeseva One', serif;
     font-size: 64px;
-    color: #EBA08B;
+    color: $dark-apricot;
+}
+
+.text--link {
+    text-decoration: underline;
+    color: $dark-purple;
+}
+
+.text--fade {
+    font-family: 'Inder', sans-serif;
+    font-size: 20px;
+    color: $purple;
 }
 
 .home__background {
     position: relative;
-    // width: 100%;
-    // height: 100vh;
-    // background: url('../images/home-background.svg');
 }
 
 .home__wrapper-text {
     font-family: 'Yeseva One', serif;
     font-size: 96px;
-    color: #443E66;
+    color: $dark-purple;
     display: block;
     text-align: center;
 }
@@ -37,7 +65,7 @@ html, body {
 .home-text--sub {
     font-family: 'Inder', sans-serif;
     font-size: 20px;
-    color: #7A7499;
+    color: $purple;
     line-height: 2;
 }
 
@@ -118,64 +146,9 @@ html, body {
     100%{opacity: 0;}
 }
 
-    
-// About
-
-.content__wrapper {
-    margin: 5% 15%;
-}
-
-.content__about {
-    display: flex;
-    gap: 100px;
-    margin: 0 0 80px;
-}
-
-.content__about--left {
-    flex-basis: 60%;
-}
-
-.content__about--right {
-    flex-basis: 40%;
-}
-
-.content__about-description {
-    line-height: 30px;
-}
-
-.content__about-button {
-    margin: 15px 0;
-}
-
-.content__about-button a {
-    border-radius: 30px;
-    background: #EBA08B;
-    color: #F5F5F5;
-    padding: 10px 50px;
-    text-align: center;
-    cursor: pointer;
-    text-decoration: none;
-    white-space: nowrap;
-}
-
-.content__about-button a:hover  {
-    background: #EBB9AA;
-}
-
-.contacts__item {
-    display: flex;
-    gap: 30px;
-    margin: 20px 0;
-}
-
-
-
-svg {
+svg#main__wrapper-background {
     width: 100%;
-    // height: 100vh;
-    // position: fixed;
     z-index: 2;
-    // filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3));
 
     #blob1 {
         animation: blob1 8s infinite forwards;
@@ -247,3 +220,162 @@ svg {
     }
 }
 
+    
+// About
+
+.content__wrapper {
+    margin: 5% 15%;
+}
+
+.content__about {
+    display: flex;
+    gap: 100px;
+    margin: 0 0 80px;
+}
+
+.content__about--left {
+    flex-basis: 60%;
+}
+
+.content__about--right {
+    flex-basis: 40%;
+}
+
+.content__about-description {
+    line-height: 30px;
+}
+
+.content__about-button {
+    margin: 25px 0;
+}
+
+.content__about-button a {
+    border-radius: 30px;
+    background: $dark-apricot;
+    color: $off-white;
+    padding: 10px 50px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.content__about-button a:hover  {
+    background: $light-apricot;
+}
+
+.contacts__item {
+    display: flex;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+// Experience
+
+.timeline {
+    margin: 0 auto;
+    padding: 25px 0;
+    display: grid;
+    grid-template-columns: 1fr 3px 1.25fr;
+    color: $dark-purple;
+    font-family: 'Inder', sans-serif;
+}
+
+.timeline__component--left {
+    margin: 0 20px 20px 0;
+}
+
+.timeline__component--right {
+    margin: 0 0 20px 50px;
+}
+
+.timeline__component--bottom {
+    margin-bottom: 0;
+  }
+
+.timeline__middle {
+    position: relative;
+    background: $light-purple;
+    width: 1px;
+}
+
+.timeline__point {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background: $light-purple;
+    border-radius: 50%;
+}
+
+.timeline__point--bottom {
+    top: initial;
+    bottom: 0;
+}
+
+.timeline__company-name {
+    font-size: 24px;
+    color: $dark-purple;
+    line-height: 1.5;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.timeline__company-name:after {
+    content: url('../images/external-link.svg');
+    margin: 0 10px;
+}
+
+.timeline__company-date {
+    font-size: 20px;
+    color: $light-purple;
+    line-height: 1.5;
+}
+
+.timeline__title {
+    margin: 0;
+    font-size: 24px;
+    color: $yellow;
+}
+
+.timeline__responsibilities {
+    margin: 10px 0;
+    line-height: 2;
+    font-size: 16px;
+    list-style-type: disc;
+    padding-inline-start: 20px;
+}
+
+.timeline__responsibilities--sub {
+    list-style-type: circle;
+    padding-inline-start: 40px;
+}
+
+.timeline__responsibilities a {
+    text-decoration: underline;
+    color: $dark-purple;
+}
+
+.responsibilities-with-sub {
+    line-height: 1px;
+}
+
+.timeline__experience-tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.timeline__experience-tags li {
+    border-radius: 30px;
+    width: fit-content;
+    padding: 3px 18px;
+    background: $lime;
+    color: $off-white;
+    margin: .5rem .375rem 0 0;
+    font-size: 14px;
+}
+
+.footer__info {
+    margin: 100px 0 0;
+    width: 500px;
+}
