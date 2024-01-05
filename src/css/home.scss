@@ -289,7 +289,11 @@ svg#main__wrapper-background {
 
 .timeline__component--bottom {
     margin-bottom: 0;
-  }
+}
+
+.timeline__component--company-name {
+    display: none;
+}
 
 .timeline__middle {
     position: relative;
@@ -377,5 +381,101 @@ svg#main__wrapper-background {
 
 .footer__info {
     margin: 100px 0 0;
-    width: 500px;
+    max-width: 500px;
+}
+
+/* Large devices such as laptops */
+@media only screen and (max-width: 1024px) {
+    .text--normal, p, .text--fade {
+        font-size: 16px;
+    }
+
+    .text--title {
+        font-size: 54px;
+    }
+
+    .home__wrapper-text {
+        font-size: 82px;
+    }
+
+    .timeline__company-name, .timeline__title {
+        font-size: 20px;
+    }
+
+    .timeline__company-date {
+        font-size: 16px;
+    }
+
+    .timeline__responsibilities {
+        font-size: 14px;
+    }
+
+    .timeline__experience-tags {
+        font-size: 12px;
+    }
+}
+
+    
+/* Small devices such as large phones */
+@media only screen and (max-width: 640px) {
+    .text--title {
+        font-size: 42px;
+    }
+
+    .home__wrapper-text {
+        font-size: 72px;
+    }
+
+    .big-star {
+        height: 40px;
+    }
+
+    .small-star--left, .small-star--right {
+        height: 20px;
+    }
+
+    .content__about {
+        display: block;
+    }
+
+    .content__about-button a {
+        padding: 8px 30px;
+        font-size: 16px;
+    }
+
+    .content__about--right {
+        margin-top: 50px;
+    }
+
+    .timeline {
+        grid-template-columns: 3px 1.25fr;
+    }
+
+    .timeline__component--left {
+        display: none;
+    }
+
+    .timeline__component--right {
+        margin: 0 0 20px 20px;
+    }
+
+    .timeline__component--company-name {
+        display: block;
+    }
+    
+    .timeline__company-name:after {
+        height: 30px;
+    }
+
+    .footer__info {
+        margin: 50px 0 0;
+    }
+
+}
+
+/* Small devices such as small phones */
+@media only screen and (max-width: 480px) {
+    .home__wrapper-text {
+        font-size: 62px;
+    }
 }

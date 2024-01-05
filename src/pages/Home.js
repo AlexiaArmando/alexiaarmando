@@ -103,6 +103,10 @@ const Home = () => {
                         <div className="timeline__point"></div>
                     </div>
                     <div className="timeline__component--right">
+                        <div className="timeline__component--company-name">
+                            <a href="https://cafe24corp.com.ph/" target="_blank" rel="noreferrer nofollow" className="timeline__company-name">Cafe24 Philippines</a>
+                            <div className="timeline__company-date">Sep 2022 - 2023</div>
+                        </div>
                         <div className="timeline__title">Senior Web Developer</div>
                         <ul className="timeline__responsibilities">
                             <li>Revamp a high priority legacy project - &nbsp;
@@ -137,6 +141,10 @@ const Home = () => {
                         <div className="timeline__point"></div>
                     </div>
                     <div className="timeline__component--right">
+                        <div className="timeline__component--company-name">
+                            <a href="https://cafe24corp.com.ph/" target="_blank" rel="noreferrer nofollow" className="timeline__company-name">Cafe24 Philippines</a>
+                            <div className="timeline__company-date">Jul 2019 - Aug 2022</div>
+                        </div>
                         <div className="timeline__title">Junior Web Developer</div>
                         <ul className="timeline__responsibilities">
                             <li>Maintained internal project of the company. - Meeting Master (Company's Calendar)</li>
@@ -182,6 +190,10 @@ const Home = () => {
                         <div className="timeline__point timeline__point--bottom"></div>
                     </div>
                     <div className="timeline__component--right timeline__component--bottom">
+                        <div className="timeline__component--company-name">
+                            <a href="https://elosoftbiz.com/" target="_blank" rel="noreferrer nofollow" className="timeline__company-name">Elosoft Inc.</a>
+                            <div className="timeline__company-date">May - Jun 2019</div>
+                        </div>
                         <div className="timeline__title">Web Developer</div>
                         <ul className="timeline__responsibilities">
                             <li>Engaged in a project-based system.</li>
