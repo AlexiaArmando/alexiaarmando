@@ -219,7 +219,7 @@ const Home = () => {
                 <div className="content__projects-title text--title">recent projects</div>
                 <div className='project__content'>
                     <div className='project__item'>
-                        <a href="https://experts.cafe24.com/client" target="_blank" rel="noreferrer nofollow" className="project__item__company-name">MERN Book Inventory</a>
+                        <a href="http://3.107.0.200/" target="_blank" rel="noreferrer nofollow" className="project__item__company-name">MERN Book Inventory</a>
                         <p className='project__item__description'>
                             Book Inventory web application that can create, read, update, and delete books. 
                             It was created using the <span className="description--normal">MERN stack </span> 
@@ -227,7 +227,7 @@ const Home = () => {
                         </p>
                     </div>
                     <div className='project__item'>
-                        <a href="https://experts.cafe24.com/client" target="_blank" rel="noreferrer nofollow" className="project__item__company-name">Portfolio</a>
+                        <a href="https://alexia-armando.vercel.app/" target="_blank" rel="noreferrer nofollow" className="project__item__company-name">Portfolio</a>
                         <p className='project__item__description'>
                             My Portfolio was created using <span className="description--normal">React.js</span> and deployed with <span className="description--normal">Vercel</span>.
                         </p>
