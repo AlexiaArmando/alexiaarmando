@@ -245,7 +245,7 @@ const Home = () => {
 
             {/* Certifications */}
             <div className="content__projects">
-                <div className="content__projects-title text--title">certifications</div>
+                <div className="content__projects-title text--title">certificates</div>
                 <div className='project__content'>
                     <div className='project__item'>
                         <a href="https://www.udemy.com/certificate/UC-e7bff472-89b3-4305-bd3d-edc6db49717c/" target="_blank" rel="noreferrer nofollow" className="project__item__company-name">
