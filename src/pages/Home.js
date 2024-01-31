@@ -248,7 +248,7 @@ const Home = () => {
                 <div className="content__projects-title text--title">certifications</div>
                 <div className='project__content'>
                     <div className='project__item'>
-                        <a href="https://experts.cafe24.com/client" target="_blank" rel="noreferrer nofollow" className="project__item__company-name">
+                        <a href="https://www.udemy.com/certificate/UC-e7bff472-89b3-4305-bd3d-edc6db49717c/" target="_blank" rel="noreferrer nofollow" className="project__item__company-name">
                             Node.js - The Complete Guide (MVC, REST APIs, GraphQL, Deno)
                         </a>
                         <div className='project__item__description'>
