@@ -214,6 +214,50 @@ const Home = () => {
             </div>
             
 
+            {/* Recent Projects */}
+            <div className="content__projects">
+                <div className="content__projects-title text--title">recent projects</div>
+                <div className='project__content'>
+                    <div className='project__item'>
+                        <a href="https://experts.cafe24.com/client" target="_blank" rel="noreferrer nofollow" className="project__item__company-name">MERN Book Inventory</a>
+                        <p className='project__item__description'>
+                            Book Inventory web application that can create, read, update, and delete books. 
+                            It was created using the <span className="description--normal">MERN stack </span> 
+                            (MongoDB, Express.js, React.js, and Node.js) and deployed it using <span className="description--normal">AWS</span>.
+                        </p>
+                    </div>
+                    <div className='project__item'>
+                        <a href="https://experts.cafe24.com/client" target="_blank" rel="noreferrer nofollow" className="project__item__company-name">Portfolio</a>
+                        <p className='project__item__description'>
+                            My Portfolio was created using <span className="description--normal">React.js</span> and deployed with <span className="description--normal">Vercel</span>.
+                        </p>
+                    </div>
+                    <div className='project__item'>
+                        <a href="https://experts.cafe24.com/client" target="_blank" rel="noreferrer nofollow" className="project__item__company-name">Cafe24 Experts</a>
+                        <p className='project__item__description'>
+                            It is a web application designed exclusively for the company's clients, addressing their specific needs. 
+                            Essentially, it serves as a platform where clients can submit project requests, and experts or professionals can apply to work on those projects.
+                            The application was created using <span className="description--normal">Laravel</span> and <span className="description--normal">Vue.js</span>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            {/* Certifications */}
+            <div className="content__projects">
+                <div className="content__projects-title text--title">certifications</div>
+                <div className='project__content'>
+                    <div className='project__item'>
+                        <a href="https://experts.cafe24.com/client" target="_blank" rel="noreferrer nofollow" className="project__item__company-name">
+                            Node.js - The Complete Guide (MVC, REST APIs, GraphQL, Deno)
+                        </a>
+                        <div className='project__item__description'>
+                            January 29, 2024 | 40.5 hours
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div className="footer__info text--fade">
                 Designed in <span className="text--normal">Figma</span> and coded in <span className="text--normal">Visual Studio Code</span>. 
                 Built with <span className="text--normal">React.js</span>, deployed with <span className="text--normal">Vercel</span>.
