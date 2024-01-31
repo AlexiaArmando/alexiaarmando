@@ -51,7 +51,9 @@ const Home = () => {
                 <div className="content__about--left">
                     <div className="content__about-title text--title">hello!</div>
                     <div className="content__about-description text--normal">
-                        I am Maria Alexia Armando, a web developer specializing in both front-end and back-end web development based in the Philippines. I have extensive experience with Laravel and Vue.js.
+                    I am Maria Alexia Armando, a web developer specializing in both front-end and back-end web development based in the Philippines. 
+                    With extensive experience in <span className='text--bold'>Laravel</span> and <span className='text--bold'>Vue.js</span>, I continuously seek to expand my expertise. 
+                    I have recently obtained certification in <span className='text--bold'>Node.js</span> and am currently engaged in mastering the <span className='text--bold'>MERN stack</span>.
                     </div>
                     <div className="content__about-button"><a href={PDF} target="_blank" rel="noreferrer nofollow" className="text--normal">View Résumé</a></div>
                 </div>
